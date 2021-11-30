@@ -93,7 +93,7 @@ namespace ParkingBill
             return ParkingTime;
         }
         /// <summary>
-        /// Get the parking hours as per the business logic
+        /// Calculates the parking hours as per the business logic
         /// </summary>
         /// <param name="entryTime">Input entry time in HH:MM format where HH ranges from 00 to 23 and MM ranges from 00 to 59</param>
         /// <param name="exitTime">Input exit time in HH:MM format where HH ranges from 00 to 23 and MM ranges from 00 to 59</param>
@@ -111,10 +111,10 @@ namespace ParkingBill
             ParkingFullHours = hours;            
         }
         /// <summary>
-        /// Calculate the parking fees by passing the hours as input and using the business logic to get the output
+        /// Calculates the parking fees by passing the hours as input and using the business logic to get the output
         /// </summary>
         /// <param name="hours">Hours as an integer value</param>
-        /// <returns>Parking fees</returns>
+        /// <returns></returns>
         private void CalculateParkingFees(int hours)
         {
             //Fee for first hour
@@ -134,7 +134,7 @@ namespace ParkingBill
         /// </summary>
         /// <param name="entryTime">Input entry time in HH:MM format where HH ranges from 00 to 23 and MM ranges from 00 to 59</param>
         /// <param name="exitTime">Input exit time in HH:MM format where HH ranges from 00 to 23 and MM ranges from 00 to 59</param>
-        /// <returns>Total Parking Fees</returns>
+        /// <returns></returns>
         internal void CalculateTotalParkingFees()
         {
             CalculateParkingFullHours(EntryTime, ExitTime);            

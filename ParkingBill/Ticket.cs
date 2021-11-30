@@ -81,7 +81,7 @@ namespace ParkingBill
         /// </summary>
         /// <param name="entryTime">Input entry time in HH:MM format where HH ranges from 00 to 23 and MM ranges from 00 to 59</param>
         /// <param name="exitTime">Input exit time in HH:MM format where HH ranges from 00 to 23 and MM ranges from 00 to 59</param>
-        /// <returns></returns>
+        /// <returns>Full Parking hours for calculations</returns>
         internal static int CalculateParkingFullHours(string entryTime, string exitTime)
         {
             DateTime entryDateTime = GetParkingTime(entryTime);
